@@ -1,0 +1,17 @@
+---
+import Card from "./Card.astro";
+let sqlQueryBuilderFeatures = [
+    {
+        feature: "User-Friendly Interface",
+        description: "Create a user-friendly interface where users can input their query requirements easily.",
+    },
+    {
+        feature: "Query Building",
+        description: "Allow users to construct SQL queries visually by selecting tables, columns, conditions, and sorting criteria using drop-down menus, checkboxes, and input fields.",
+    },
+    // You can add more features as needed
+];
+
+
+---
+{sqlQueryBuilderFeatures.map(item =><Card title={item.feature} body={item.description}/>)}
